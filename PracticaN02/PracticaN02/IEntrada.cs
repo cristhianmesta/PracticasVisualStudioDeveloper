@@ -2,6 +2,6 @@
 {
     internal interface IEntrada
     {
-        decimal Precio();
+        decimal Precio(int dia);
     }
 }

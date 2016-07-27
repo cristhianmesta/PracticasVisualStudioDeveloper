@@ -2,11 +2,11 @@
 
 namespace CarritoCompras
 {
-    class Visa : IMedioPago
+    class MasterCard : IMedioPago
     {
         public string Pagar()
         {
-            return "Pagado con VISA";
+            return "Pagado con MasterCard";
         }
     }
 }

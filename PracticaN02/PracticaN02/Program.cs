@@ -12,13 +12,12 @@ namespace CarritoCompras
         {
             Carrito carrito = new Carrito();
 
-            carrito.AgregarEntrada(new EntradaNiño(), 2);
-            carrito.AgregarEntrada(new EntradaAdulto(), 2);
-            carrito.AgregarEntrada(new EntradaAdultoMayor(), 1);
+            carrito.AgregarEntrada(new EntradaNiño(), 2, DateTime.Today );
+            carrito.AgregarEntrada(new EntradaAdulto(), 2, DateTime.Today);
+            carrito.AgregarEntrada(new EntradaAdultoMayor(), 1, DateTime.Today);
 
             Console.WriteLine($"Total a Pagar: {carrito.TotalAPagar()}");
-            IMedioPago medioPago = new Visa();
-            carrito.Pagar(medioPago);
+            Console.WriteLine($"{carrito.Pagar(new Visa())}");
 
             Console.ReadKey();
         }

@@ -2,5 +2,7 @@
 {
     interface IMedioPago
     {
+
+        string Pagar();
     }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{9BD82F46-0F3B-49A6-BEE5-6A6ADD884A32}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PracticaN02</RootNamespace>
-    <AssemblyName>PracticaN02</AssemblyName>
+    <RootNamespace>CarritoCompras</RootNamespace>
+    <AssemblyName>CarritoCompras</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -59,13 +59,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Carrito.cs" />
+    <Compile Include="DepositoCuenta.cs" />
     <Compile Include="EntradaAdulto.cs" />
     <Compile Include="EntradaAdultoMayor.cs" />
     <Compile Include="EntradaNiño.cs" />
     <Compile Include="IEntrada.cs" />
     <Compile Include="IMedioPago.cs" />
+    <Compile Include="PayPal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MasterCard.cs" />
     <Compile Include="Visa.cs" />
   </ItemGroup>
   <ItemGroup>
