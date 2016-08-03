@@ -32,7 +32,7 @@ namespace CarritoCompras
         public string MostrarEntrada()
         {
             StringBuilder impresion = new StringBuilder();
-            entradas.ForEach(entrada =>  impresion.AppendLine($"{entrada.Pelicula} x {entrada.Cantidad} entradas a las {entrada.Hora.ToString("hh:mm")}"));
+            entradas.ForEach(entrada =>  impresion.AppendLine($"{entrada.Pelicula} x {entrada.Cantidad} entradas a las {entrada.Hora.ToString("hh:mm tt")}"));
             return impresion.ToString();
         }
 
