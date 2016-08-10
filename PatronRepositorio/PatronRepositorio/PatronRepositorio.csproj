@@ -44,8 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dominio\Album.cs" />
+    <Compile Include="Dominio\Artista.cs" />
     <Compile Include="Dominio\Entidad.cs" />
+    <Compile Include="Dominio\Cancion.cs" />
     <Compile Include="Implementaciones\AlbumRepositorio.cs" />
+    <Compile Include="Implementaciones\ArtistaRepositorio.cs" />
+    <Compile Include="Implementaciones\CancionRepositorio.cs" />
     <Compile Include="Implementaciones\OracleBasedeDatos.cs" />
     <Compile Include="Implementaciones\SqlBasedeDatos.cs" />
     <Compile Include="Interfaces\BasedeDatos.cs" />
@@ -53,6 +57,7 @@
     <Compile Include="Interfaces\Parametro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiendaMusica.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

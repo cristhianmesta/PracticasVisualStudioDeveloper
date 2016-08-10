@@ -14,9 +14,12 @@ namespace PatronRepositorio.Interfaces
         void Actualizar(TEntidad entidad);
 
         void Eliminar(TKey id);
+    
+        TEntidad IdAgregado(TEntidad entidad);
 
         TEntidad Traer(TKey id);
-
+ 
+        IEnumerable<TEntidad> Traer();
 
     }
 }

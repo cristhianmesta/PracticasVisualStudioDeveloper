@@ -46,6 +46,17 @@ namespace PatronRepositorio.Interfaces
             }
         }
 
+        public object EjecutarComandoyEscalar(string comandoSql_Comando, string comandoSql_Escalar, Parametro[] parametros)
+        {
+            using (IDbCommand comando = ObtenerComando(comandoSql_Comando))
+            {
+                AsignarParametros(comando, parametros);
+                comando.ExecuteNonQuery();
+                comando.CommandText = comandoSql_Escalar;
+                return comando.ExecuteScalar();
+            }
+        }
+
         protected abstract void AsignarParametros(IDbCommand comando, Parametro[] parametros);
 
         protected abstract IDbCommand ObtenerComando(string comandoSql);
